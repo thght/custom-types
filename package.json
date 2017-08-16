@@ -1,0 +1,35 @@
+{
+  "name": "custom-types",
+  "version": "0.0.1",
+  "description": "Addon for types.js to allow for creating and managing custom types",
+  "main": "custom-types.min.js",
+    "dependencies": {
+    "types.js": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thght/custom-types"
+  },
+  "keywords": [
+    "type",
+    "typeof",
+    "types",
+    "validation",
+    "validate",
+    "check",
+    "force",
+    "is",
+    "not",
+    "has",
+    "all"
+  ],
+  "author": "Dennis Raymondo van der Sluis <dennisraymondovandersluis@gmail.com> (https://github.com/thght/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thght/custom-types/issues"
+  },
+  "homepage": "https://github.com/thght/custom-types"
+}
