@@ -1,6 +1,6 @@
 {
   "name": "custom-types",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extention for types.js to create model/store classes with dynamic type checking",
   "main": "custom-types.min.js",
     "dependencies": {

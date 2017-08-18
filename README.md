@@ -1,10 +1,10 @@
 # custom-types
 <br/>
-Creates a class that holds a static data model including it's types. Every new instance of the class gets a fresh model as store. The context is frozen so the store will always mirror the model, except for it's values of course. Writing to the store(context) invokes the setter, a value will only be stored if it has the correct type, otherwise an event is triggered and a error is logged. You can lock a property, making it read-only, or unlock it again. See the examples for more.
+Creates a class that holds a static data model including its types. Every new instance of the class gets a fresh model as store. The context is frozen so the store will always mirror the model, except for its values of course. Writing to the store(context) invokes the setter, a value will only be stored if it has the correct type, otherwise an event is triggered and a error is logged. You can lock a property, making it read-only, or unlock it again. See the examples for more.
 
 <br/>
 
-This tool is an extention for <a href="https://github.com/phazelift/types.js">types.js</a>. It only adds a create method and returns types.js, no need to require that seperately.
+This tool is an extension for <a href="https://github.com/phazelift/types.js">types.js</a>. It only adds a create method and returns types.js, no need to require that separately.
 <br/>
 
 I will add to this if time allows. This is it for now, not fully tested but ready to play with.
@@ -14,7 +14,7 @@ I will add to this if time allows. This is it for now, not fully tested but read
 
 **API**
 
-The idea is that the model (including it's fields types) never changes during runtime. The store always reflects the model, except for the values.
+The idea is that the model (including its fields types) never changes during runtime. The store always reflects the model, except for the values.
 
 The class method identifiers are all in UPPERCASE. This way you can use anything lowercase for model fields without having to worry about name collisions.
 
@@ -94,7 +94,7 @@ person.SET({
 // you can lock a field making it read-only
 person.LOCK( 'name' );
 
-// check whether it's locked
+// check whether its locked
 const isLocked = person.IS_LOCKED( 'name' );
 
 // or unlock it
