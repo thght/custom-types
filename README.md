@@ -1,9 +1,10 @@
 # custom-types
 <br/>
 Creates a class that holds a static data model including it's types. Every new instance of the class gets a fresh model as store. The context is frozen so the store will always mirror the model, except for it's values of course. Writing to the store(context) invokes the setter, a value will only be stored if it has the correct type, otherwise an event is triggered and a error is logged. You can lock a property, making it read-only, or unlock it again. See the examples for more.
+
 <br/>
 
-This tool is based upon (and returns) <a href="https://github.com/phazelift/types.js">types.js</a>. It only adds a create method to it.
+This tool is an extention for <a href="https://github.com/phazelift/types.js">types.js</a>. It only adds a create method and returns types.js, no need to require that seperately.
 <br/>
 
 I will add to this if time allows. This is it for now, not fully tested but ready to play with.
@@ -32,9 +33,9 @@ const types = require( 'custom-types' );
 // create a model, this will serve both as a model and internal type reference
 // the type of each key will be defined internally using types.js
 const Person = types.create({
-	name			: '',
+	name		: '',
 	age			: 0,
-	firstLogin			: new Date(0),
+	firstLogin		: new Date(0),
 	active		: false,
 	friends		: [],
 	settings		: {},
