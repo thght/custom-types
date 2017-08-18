@@ -2,7 +2,9 @@
 <br/>
 Creates a class that holds a static data model including it's types. Every new instance of the class gets a fresh model as store. Writing to the store(context) invokes the setter to check the type of the value. You can lock a property, making it read-only, or unlock it again.
 
+
 This tool is based upon (and returns) <a href="https://github.com/phazelift/types.js">types.js</a>. It only adds a create method to it.
+
 
 I will add to this if time allows. Just the base for now, not fully tested, but ready to play with.
 
@@ -25,12 +27,12 @@ const types = require( 'custom-types' );
 // create a model, this will serve both as a model and internal type reference
 // the type of each key will be defined internally using types.js
 const Person = types.create({
-	name		   : '',
+	name			: '',
 	age			: 0,
-	firstLogin	 : new Date(0),
-	active	     : false,
+	firstLogin	: new Date(0),
+	active		: false,
 	friends		: [],
-	settings	   : {},
+	settings		: {},
 	etc			: '...'
 });
 
