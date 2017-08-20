@@ -1,30 +1,31 @@
 {
   "name": "custom-types",
-  "version": "0.0.5",
-  "description": "Extention for types.js to create model/store classes with dynamic type checking",
+  "version": "0.0.6",
+  "description": "Extention for types.js to create safer model/store classes with dynamic type checking",
   "main": "custom-types.min.js",
-    "dependencies": {
+  "dependencies": {
     "types.js": "latest"
   },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "coffee-script": "^1.12.7",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers coffee:coffee-script/register"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/thght/custom-types"
   },
   "keywords": [
+    "model",
+    "store",
     "type",
-    "typeof",
-    "types",
     "validation",
-    "validate",
-    "check",
-    "force",
-    "is",
-    "not",
-    "has",
-    "all"
+    "safe",
+    "protected"
   ],
   "author": "Dennis Raymondo van der Sluis <thght4all@gmail.com> (https://github.com/thght/)",
   "license": "MIT",

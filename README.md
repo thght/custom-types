@@ -150,9 +150,15 @@ console.log( types.allArray(['renders'], [true]) );
 
 Your feedback and/or feature requests are welcome.
 
-You can donate to my open-source projects with bitcoin: `1GULvHiXkkQMNiGBpUF7sVpMPgNu5Sv3mZ`
+You can support my open-source projects with bitcoin: `1GULvHiXkkQMNiGBpUF7sVpMPgNu5Sv3mZ`
 
 ---------------------------------------------------
+**0.0.6**
+
+- adds dev dependencies: chai, coffee-script, mocha, sinon
+- adds some tests for the class and its properties returned by .create
+
+---
 **0.0.3**
 
 - adds event handlers
